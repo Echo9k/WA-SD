@@ -9,6 +9,7 @@ def downcaster(df):
     df[icols] = df[icols].apply(pd.to_numeric, downcast='integer')
     return df
 
+
 def to_categorical(df, columns):
     for col in columns:
         df[col] = pd.Categorical(df[col])
